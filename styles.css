@@ -1,3 +1,19 @@
 body{
     text-align: center;
 }
+
+.choicebutton{
+    height:100px ;
+    width: 100px;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    background-color: rgb(151, 199, 199);
+    border-radius: 50px;
+    
+
+}
+
+.choiceimage{
+    height: 75px;
+}

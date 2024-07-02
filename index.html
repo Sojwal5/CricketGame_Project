@@ -6,38 +6,32 @@
 </head>
 <body>
     <h1>Bat Ball Stump Game</h1>
-    <button onclick="
+    <button class="choicebutton" onclick="
      UserChoice='Bat';
     ComputerChoice_Generate()
     getresult(UserChoice,computerChoice)
-    alert(`User choice is Bat , Computer choice is ${computerChoice} 
-     ${result}
-     win :${score.win}
-     lose :${score.lose}
-     draw :${score.Draw}`);
-    ">Bat</button>
+    showresult(UserChoice,computerChoice,result)
+    "><img src="images/bat.png" alt="" class="choiceimage"></button>
 
-    <button onclick="
+    <button class="choicebutton" onclick="
      UserChoice='Ball';
     ComputerChoice_Generate()
     getresult(UserChoice ,computerChoice)
-    alert(`User choice is Ball , Computer choice is ${computerChoice} 
-    ${result}
-     win :${score.win}
-     lose :${score.lose}
-     draw :${score.Draw}`);
-    ">Ball</button>
+    showresult(UserChoice,computerChoice,result)  
+    "><img src="images/ball.png" alt="" class="choiceimage"></button>
 
-    <button onclick="
+    <button class="choicebutton" onclick="
      UserChoice='Stump';
     ComputerChoice_Generate()
     getresult(UserChoice ,computerChoice)
-    alert(`User choice is stump , Computer choice is ${computerChoice} 
-     ${result}
-     win :${score.win}
-     lose :${score.lose}
-     draw :${score.Draw}`);
-    ">Stump</button>
+    showresult(UserChoice,computerChoice,result)
+    "><img src="images/stump.png" alt=""class="choiceimage"></button>
+
+
+     <h3 id="user_move"> </h3>
+     <h3 id="computer_move"> </h3>
+     <h3 id="result">  </h3>
+     <h3 id="score"> </h3>
     
 <script src="index.js"></script>
 </body>

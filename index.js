@@ -6,6 +6,10 @@ let score={
     win:0,
     lose:0,
     Draw:0,
+
+    displayscore:function(){
+       return `win :${score.win} lose :${score.lose} draw :${score.Draw}`
+    }
 }
 
 function ComputerChoice_Generate(){
@@ -23,6 +27,7 @@ function ComputerChoice_Generate(){
         
     }
 }
+
 
 function getresult(UserChoice,computerChoice){
     if (UserChoice=='Bat'){
@@ -60,4 +65,15 @@ function getresult(UserChoice,computerChoice){
         }
     }
     console.log(score);
+}
+
+function showresult(UserChoice,computerChoice,result){
+    
+    document.querySelector('#user_move').innerText =`You have chosen ${UserChoice}` ;  
+
+    document.querySelector('#computer_move').innerText =`Computer have chosen ${computerChoice}` ;  
+
+    document.querySelector('#result').innerText =` ${result}` ;  
+
+    document.querySelector('#score').innerText =` ${score.displayscore()}` ;  
 }
